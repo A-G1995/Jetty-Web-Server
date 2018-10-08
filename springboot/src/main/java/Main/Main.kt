@@ -29,7 +29,7 @@ class Router {
         return "Hi from get ${n}\n"
     }
 
-    @RequestMapping(value = "/post" , method = arrayOf(RequestMethod.POST))
+    @PostMapping(value = "/post")
     fun doPost(@RequestBody map:HashMap<String,String>):String{
         return "Hi from post\n${map}"
     }
